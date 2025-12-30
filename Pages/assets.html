@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Assets Download</title>
+  <link rel="stylesheet" href="../CSS/assets.css" />
+</head>
+<body>
+<nav class="sidebar" aria-label="Primary Navigation">
+  <h1>ARCTIQ</h1>
+  <p>@arctiqgorillatag</p>
+  <a href="index.html" tabindex="0">Home</a>
+  <a href="sfx.html" tabindex="0">SFX</a>
+  <a href="assets.html" tabindex="0">Assets</a>
+  <a href="support.html" tabindex="0">Support</a>
+</nav>
+
+  <main class="content" role="main">
+    <section class="assets-grid" aria-label="Available assets for download">
+      
+      <!-- Example asset card for an image -->
+      <article class="asset-card" tabindex="0">
+        <h3>Sunset Photo</h3>
+        <img src="images/sunset.jpg" alt="Beautiful sunset over the mountains" />
+        <a href="images/sunset.jpg" download class="download-btn" aria-label="Download Sunset Photo">
+          Download Image
+        </a>
+      </article>
+
+      <!-- Example asset card for a video -->
+      <article class="asset-card" tabindex="0">
+        <h3>Nature Video</h3>
+        <video controls preload="metadata" tabindex="-1">
+          <source src="videos/nature.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <a href="videos/nature.mp4" download class="download-btn" aria-label="Download Nature Video">
+          Download Video
+        </a>
+      </article>
+
+      <!-- Add more assets here as needed -->
+
+    </section>
+  </main>
+</body>
+</html>

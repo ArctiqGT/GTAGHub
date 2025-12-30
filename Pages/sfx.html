@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ARCTIQ | SFX</title>
+<link rel="stylesheet" href="../CSS/sfx.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+<nav class="sidebar" aria-label="Primary Navigation">
+  <h1>ARCTIQ</h1>
+  <p>@arctiqgorillatag</p>
+  <a href="index.html" tabindex="0">Home</a>
+  <a href="sfx.html" tabindex="0">SFX</a>
+  <a href="assets.html" tabindex="0">Assets</a>
+  <a href="support.html" tabindex="0">Support</a>
+</nav>
+
+<main class="content" aria-label="Sound Effects Library">
+
+  <section aria-labelledby="search-label" class="search-section">
+    <form class="search-bar" onsubmit="return false;">
+      <label id="search-label" for="search-input" class="sr-only">Search Sound Effects</label>
+      <input type="search" id="search-input" placeholder="Search sound effects..." aria-describedby="search-help" />
+      <button id="search-button" aria-label="Search sound effects"><i class="fas fa-search"></i> Search</button>
+    </form>
+    <small id="search-help" class="search-help-text">Type to filter sound effects by name</small>
+  </section>
+
+  <section class="sfx-grid" id="sfx-grid" aria-live="polite" aria-relevant="additions removals">
+    <h1>SFX</h1>
+  </section>
+
+</main>
+
+<script src="../script.js"></script>
+
+</body>
+</html>
