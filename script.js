@@ -149,21 +149,3 @@ searchButton.addEventListener('click', (e) => {
     filterSFX();
 });
 searchInput.addEventListener('input', filterSFX);
-
-document.addEventListener('DOMContentLoaded', () => {
-      const pageWrapper = document.getElementById('page-wrapper');
-      pageWrapper.classList.add('fade-in');
-
-      document.querySelectorAll('nav.sidebar a').forEach(link => {
-        if (link.hostname === window.location.hostname) {
-          link.addEventListener('click', e => {
-            e.preventDefault();
-            const href = link.getAttribute('href');
-            pageWrapper.classList.add('fade-out');
-            setTimeout(() => {
-              window.location.href = href;
-            }, 400);
-          });
-        }
-      });
-    });
