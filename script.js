@@ -97,6 +97,17 @@ const sfxData = [
     }
 ];
 
+function getAudioType(src) {
+  if (src.endsWith('.wav')) return 'audio/wav';
+  if (src.endsWith('.mp3')) return 'audio/mpeg';
+  if (src.endsWith('.ogg')) return 'audio/ogg';
+  return '';
+}
+
+function getExtension(src) {
+  return src.split('.').pop();
+}
+
 const sfxGrid = document.getElementById('sfx-grid');
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
@@ -122,12 +133,17 @@ function renderSFX(filteredData) {
         card.tabIndex = 0;
 
         card.innerHTML = `
-            <h3>${sfx.name}</h3>
-            <audio controls preload="none" aria-label="${sfx.name} preview">
-              <source src="${sfx.src}" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-            <a href="${sfx.src}" download="${sanitizeFilename(sfx.name)}.mp3" class="download-btn" aria-label="Download ${sfx.name} sound effect">Download</a>
+          <h3>${sfx.name}</h3>
+          <audio controls preload="none" aria-label="${sfx.name} preview">
+            <source src="${sfx.src}" type="${getAudioType(sfx.src)}">
+            Your browser does not support the audio element.
+          </audio>
+          <a href="${sfx.src}"
+             download="${sanitizeFilename(sfx.name)}.${getExtension(sfx.src)}"
+             class="download-btn"
+             aria-label="Download ${sfx.name} sound effect">
+             Download
+          </a>
         `;
 
         sfxGrid.appendChild(card);
@@ -149,6 +165,7 @@ searchButton.addEventListener('click', (e) => {
     filterSFX();
 });
 searchInput.addEventListener('input', filterSFX);
+
 
 
 
