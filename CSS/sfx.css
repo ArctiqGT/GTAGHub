@@ -250,3 +250,18 @@ main.content::-webkit-scrollbar-thumb {
     transform: translateY(-3px);
   }
 }
+
+  #page-wrapper {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+  }
+  #page-wrapper.fade-out {
+    opacity: 0;
+  }
+  #page-wrapper.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.4s forwards;
+  }
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
