@@ -7,7 +7,22 @@
 <link rel="icon" href="pfp.png">
 <link rel="stylesheet" href="../CSS/index.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-
+<style>
+  #page-wrapper {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+  }
+  #page-wrapper.fade-out {
+    opacity: 0;
+  }
+  #page-wrapper.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.4s forwards;
+  }
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+</style>
 </head>
 <body>
 
@@ -54,6 +69,7 @@
 
 </body>
 </html>
+
 
 
 
