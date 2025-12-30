@@ -1,99 +1,99 @@
 const sfxData = [
     {
         name: "Ankles Snap",
-        src: "../sfx/AnklesSnap.mp3"
+        src: "sfx/AnklesSnap.mp3"
     },
     {
         name: "Baby Laugh",
-        src: "../sfx/BabyLaughing.mp3"
+        src: "sfx/BabyLaughing.mp3"
     },
     {
         name: "Beep",
-        src: "../sfx/beep.mp3"
+        src: "sfx/beep.mp3"
     },
     {
         name: "Bloop Button",
-        src: "../sfx/BloopButton.mp3"
+        src: "sfx/BloopButton.mp3"
     },
     {
         name: "Border",
-        src: "../sfx/Border.mp3"
+        src: "sfx/Border.mp3"
     },
     {
         name: "Bruh",
-        src: "../sfx/Bruh.mp3"
+        src: "sfx/Bruh.mp3"
     },
     {
         name: "Camera Flash",
-        src: "../sfx/CameraFlash.mp3"
+        src: "sfx/CameraFlash.mp3"
     },
     {
         name: "Cash",
-        src: "../sfx/Cash.mp3"
+        src: "sfx/Cash.mp3"
     },
     {
         name: "Chica Jumpscare",
-        src: "../sfx/ChicaJumpscare.mp3"
+        src: "sfx/ChicaJumpscare.mp3"
     },
     {
         name: "Coin Ding",
-        src: "../sfx/CoinDing.mp3"
+        src: "sfx/CoinDing.mp3"
     },
     {
         name: "Creamy Click",
-        src: "../sfx/CreamyClick.mp3"
+        src: "sfx/CreamyClick.mp3"
     },
     {
         name: "Dial",
-        src: "../sfx/DialUp.mp3"
+        src: "sfx/DialUp.mp3"
     },
     {
         name: "Discord Notify",
-        src: "../sfx/Discord-message.mp3"
+        src: "sfx/Discord-message.mp3"
     },
     {
         name: "Epic Twinkle",
-        src: "../sfx/EpicTwinkle.mp3"
+        src: "sfx/EpicTwinkle.mp3"
     },
     {
         name: "Half Life SFX",
-        src: "../sfx/HalfLifeSFX.mp3"
+        src: "sfx/HalfLifeSFX.mp3"
     },
     {
         name: "Jet Set Radio",
-        src: "../sfx/JetSetRadio.mp3"
+        src: "sfx/JetSetRadio.mp3"
     },
     {
         name: "MC Hit",
-        src: "../sfx/MCHit.mp3"
+        src: "sfx/MCHit.mp3"
     },
     {
         name: "Pan",
-        src: "../sfx/Pan.mp3"
+        src: "sfx/Pan.mp3"
     },
     {
         name: "Particle SFX",
-        src: "../sfx/ParticleSFX.mp3"
+        src: "sfx/ParticleSFX.mp3"
     },
     {
         name: "Sliding Stone",
-        src: "../sfx/SlidingStone.mp3"
+        src: "sfx/SlidingStone.mp3"
     },
     {
         name: "Tap TV SFX",
-        src: "../sfx/taptv.mp3"
+        src: "sfx/taptv.mp3"
     },
     {
         name: "Vine Boom",
-        src: "../sfx/vineboom.mp3"
+        src: "sfx/vineboom.mp3"
     },
     {
         name: "Wii Bowling Strike",
-        src: "../sfx/WiiBowlingStrike.mp3"
+        src: "sfx/WiiBowlingStrike.mp3"
     },
     {
         name: "Yikes Intro Audio",
-        src: "../sfx/YikesIntroAudio.mp3"
+        src: "sfx/YikesIntroAudio.mp3"
     }
 ];
 
@@ -149,3 +149,4 @@ searchButton.addEventListener('click', (e) => {
     filterSFX();
 });
 searchInput.addEventListener('input', filterSFX);
+
