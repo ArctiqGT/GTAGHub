@@ -21,73 +21,67 @@
   <h1>GTAG Hub</h1>
   <p>.gg/anwdrq6GSk</p>
 
-  <a href="about">Home</a>
-  <a href="sfx">SFX</a>
-  <a href="contact">Support</a>
+  <a href="#about" data-section="about">Home</a>
+  <a href="#sfx" data-section="sfx">SFX</a>
+  <a href="#contact" data-section="contact">Support</a>
 </nav>
 
-<main class="content">
-  <h1>Welcome to GTAG Hub</h1>
+<main class="content" id="page-wrapper">
 
-  <section id="about" class="intro-box" tabindex="0" aria-label="About GTAG Hub">
-    <h2 style="font-family:'TitleFont', serif; color:#ff7b7b; margin-bottom: 20px;">
+  <section id="about" class="page-section intro-box" tabindex="0">
+    <h2 style="font-family:'TitleFont', serif; color:#ff7b7b;">
       What is GTAG Hub?
     </h2>
 
     <p>
-      <strong>GTAG Hub</strong> is a resource server focused on helping
-      creators, and other people. We provide
-      <strong>sound effects, assets, tools, and support</strong> for content creation projects.
+      <strong>GTAG Hub</strong> is a resource server focused on helping creators.
+      We provide <strong>SFX, assets, tools, and support</strong>.
     </p>
 
-    <h3 style="font-family:'TitleFont', serif; color:#ff7b7b; margin-top: 30px;">
-      What We Provide
-    </h3>
-
     <ul>
-      <li>Gorilla Tag Sound Effects (SFX)</li>
+      <li>Gorilla Tag Sound Effects</li>
       <li>3D Assets & Models</li>
       <li>Unity-ready Resources</li>
-      <li>Creator Support & Help</li>
-      <li>Community-shared Content</li>
+      <li>Creator Support</li>
     </ul>
   </section>
 
-  <section id="sfx" aria-labelledby="search-label" class="search-section">
-    <form class="search-bar" onsubmit="return false;">
-      <label id="search-label" for="search-input" class="sr-only">Search Sound Effects</label>
-      <input type="search" id="search-input" placeholder="Search sound effects..." aria-describedby="search-help" />
-      <button id="search-button" aria-label="Search sound effects"><i class="fas fa-search"></i> Search</button>
-    </form>
-    <small id="search-help" class="search-help-text">Type to filter sound effects by name</small>
-  </section>
+  <section id="sfx" class="page-section">
+    <section class="search-section">
+      <form class="search-bar" onsubmit="return false;">
+        <input type="search" placeholder="Search sound effects..." />
+        <button><i class="fas fa-search"></i> Search</button>
+      </form>
+    </section>
 
-  <section class="sfx-grid" id="sfx-grid" aria-live="polite" aria-relevant="additions removals">
-    <h1>SFX</h1>
+    <section class="sfx-grid">
+      <h1>SFX</h1>
+    </section>
   </section>
-
-  <section id="contact" class="contact-section" aria-label="Contact Information and Social Links" tabindex="0">
+  
+  <section id="contact" class="page-section contact-section" tabindex="0">
     <h2>Contact & Socials</h2>
-    <nav class="social-icons" aria-label="Social media links">
-      <a href="https://www.youtube.com/@arctiqgorillatag" target="_blank" rel="noopener" aria-label="YouTube Channel">
+
+    <nav class="social-icons">
+      <a href="https://www.youtube.com/@arctiqgorillatag" target="_blank">
         <i class="fa-brands fa-youtube"></i>
       </a>
-      <a href="https://www.tiktok.com/@arctiqgt" target="_blank" rel="noopener" aria-label="TikTok Profile">
+      <a href="https://www.tiktok.com/@arctiqgt" target="_blank">
         <i class="fa-brands fa-tiktok"></i>
       </a>
-      <a href="mailto:arctiqgt@gmail.com" aria-label="Send Email">
+      <a href="mailto:arctiqgt@gmail.com">
         <i class="fa-solid fa-envelope"></i>
       </a>
-      <a href="https://discord.gg/zQU7fKpMpP" target="_blank" rel="noopener" aria-label="Discord Server">
+      <a href="https://discord.gg/zQU7fKpMpP" target="_blank">
         <i class="fa-brands fa-discord"></i>
       </a>
     </nav>
+
     <p class="email-note">Thank You!</p>
   </section>
+
 </main>
 
 <script src="script.js"></script>
 </body>
 </html>
-
-
