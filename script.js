@@ -166,10 +166,28 @@ searchButton.addEventListener('click', (e) => {
 });
 searchInput.addEventListener('input', filterSFX);
 
+const sections = document.querySelectorAll('.page-section');
+const navLinks = document.querySelectorAll('.sidebar a');
 
+function showSection(id) {
+  sections.forEach(section => {
+    section.classList.toggle('active', section.id === id);
+  });
 
+  navLinks.forEach(link => {
+    link.toggleAttribute(
+      'aria-current',
+      link.dataset.section === id
+    );
+  });
+}
 
+navLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    const id = link.dataset.section;
+    showSection(id);
+  });
+});
 
-
-
-
+const initialSection = location.hash.replace('#', '') || 'about';
+showSection(initialSection);
